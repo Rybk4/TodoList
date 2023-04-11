@@ -1,0 +1,32 @@
+
+.todo{
+     margin-left: 1rem;
+}
+.todo span.completed{
+    text-decoration: line-through;
+}
+.todo label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: #f3f3f3;
+    padding: 1rem;
+}
+.todo i{
+    z-index: 2;
+}
+input[type=text]:not(.browser-default){
+    padding-left: 5px;
+}
+.input-field label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: top 0.5s linear;
+}
+input:focus + label, textarea:valid + label {
+    top: -25px;
+  }
